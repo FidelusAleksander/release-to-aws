@@ -1,0 +1,19 @@
+# Configuration for GitHub Actions labeler v5
+# See: https://github.com/actions/labeler
+
+documentation:
+- changed-files:
+  - any-glob-to-any-file: ['**/*.md', 'docs/**/*']
+
+maintenance:
+- changed-files:
+  - any-glob-to-any-file: ['.github/**/*']
+
+enhancement:
+- changed-files:
+  - any-glob-to-any-file: ['src/**/*']
+
+dependencies:
+- changed-files:
+  - any-glob-to-any-file: ['**/package.json', '**/package-lock.json', '**/yarn.lock', '**/pnpm-lock.yaml']
+  - any-glob-to-any-file: ['**/requirements.txt', '**/uv.lock', '**/poetry.lock']
