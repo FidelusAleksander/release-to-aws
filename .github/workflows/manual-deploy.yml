@@ -12,5 +12,5 @@ jobs:
     name: Build Image
     uses: ./.github/workflows/build-ecr-artifacts.yml
     with:
-      image-tag: ${{ github.ref_name }}
+      image-tag: ${{ github.sha }}
   # Follow up with a deployment job
