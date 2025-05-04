@@ -1,13 +1,9 @@
-# release-drafter-repo
+# Release Management Demo with AWS ECR
 
-## Release Drafter Automation
+## Overview
 
-This repository uses [release-drafter](https://github.com/release-drafter/release-drafter) to automate the process of drafting release notes.
+This repository demonstrates how to automate Python application Docker image builds and deployment to Amazon ECR whenever a GitHub Release is published. It uses:
 
-### How to Use Release Drafter
+- [Release Drafter](https://github.com/release-drafter/release-drafter) to automate the creation of release notes
+- GitHub Actions to build and push Docker images to Amazon ECR when a release is published
 
-1. Ensure that the `.github/release-drafter.yml` configuration file is present in the repository.
-2. The release-drafter workflow is triggered on every push to the `main` branch.
-3. When changes are pushed to the `main` branch, release-drafter will automatically update the release draft with the changes.
-4. You can view and edit the release draft in the "Releases" section of the repository on GitHub.
-5. Publish when ready!
