@@ -1,0 +1,12 @@
+name: Manual Deploy
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build Image
+    uses: ./.github/workflows/build-ecr-artifacts.yml
+    with:
+      image-tag: ${{ github.ref_name }}
+  # Follow up with a deployment job

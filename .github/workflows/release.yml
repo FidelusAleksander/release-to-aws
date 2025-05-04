@@ -1,0 +1,13 @@
+name: Release
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build:
+    name: Build Image ( ${{ github.event.release.tag_name }} release)
+    uses: ./.github/workflows/build-ecr-artifacts.yml
+    with:
+      image-tag: ${{ github.event.release.tag_name }}
+  # Follow up with a deployment job
