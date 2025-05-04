@@ -15,7 +15,7 @@ permissions:
 
 env:
   AWS_REGION: eu-west-1
-  ECR_REPOSITORY_NAME: my-ecr-repo
+  ECR_REPOSITORY_NAME: release-to-aws-demo
 
 
 jobs:
