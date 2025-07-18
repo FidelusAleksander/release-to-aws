@@ -3,7 +3,7 @@ name = "release-to-aws"
 version = "0.1.0"
 description = "How to version and release a FastAPI app to AWS"
 readme = "README.md"
-requires-python = ">=3.11"
+requires-python = ">=3.13"
 
 dependencies = [
     "fastapi[standard]>=0.116.1",
