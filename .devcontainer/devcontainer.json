@@ -1,0 +1,22 @@
+{
+  "name": "Release to AWS DevContainer",
+  "image": "mcr.microsoft.com/devcontainers/python:3.13",
+  "features": {
+    "ghcr.io/va-h/devcontainers-features/uv:1": {},
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "tamasfe.even-better-toml",
+        "GitHub.copilot",
+        "GitHub.vscode-github-actions",
+        "GitHub.copilot-chat",
+        "bierner.markdown-preview-github-styles"
+      ]
+    }
+  },
+  "postCreateCommand": "uv sync"
+}

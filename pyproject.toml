@@ -19,4 +19,5 @@ hello = "uv_docker_example:hello"
 dev-dependencies = [
     "ruff>=0.6.2",
     "fastapi-cli>=0.0.5",
+    "pytest>=8.0.0",
 ]
