@@ -16,14 +16,7 @@
         "GitHub.copilot-chat",
         "bierner.markdown-preview-github-styles",
         "me-dutour-mathieu.vscode-github-actions"
-      ],
-      "settings": {
-        "github.copilot.chat.commitMessageGeneration.instructions": [
-          {
-            "text": "Use conventional commit message format."
-          }
-        ]
-      }
+      ]
     }
   },
   "postCreateCommand": "uv sync"
