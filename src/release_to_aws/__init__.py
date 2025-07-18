@@ -11,4 +11,4 @@ async def root():
 # New useful endpoint for testing
 @app.get("/status")
 async def status():
-    return {"status": "ok", "service": "release-to-aws"}
+    return {"status": "false", "service": "release-to-aws"}
