@@ -3,10 +3,12 @@ from fastapi import FastAPI
 app = FastAPI()
 
 
-def hello():
-    print("Hello world")
-
-
 @app.get("/")
 async def root():
-    return "Hello World live"
+    return {"message": "Welcome to the Release to AWS API!"}
+
+
+# New useful endpoint for testing
+@app.get("/status")
+async def status():
+    return {"status": "ok", "service": "release-to-aws"}
