@@ -5,6 +5,9 @@
     "ghcr.io/va-h/devcontainers-features/uv:1": {},
     "ghcr.io/devcontainers/features/docker-in-docker:2": {}
   },
+  "containerEnv": {
+    "UV_LINK_MODE": "copy"
+  },
   "customizations": {
     "vscode": {
       "extensions": [
